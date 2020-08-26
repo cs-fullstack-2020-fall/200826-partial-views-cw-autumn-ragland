@@ -41,3 +41,4 @@ C:\Users\student\Code_School\cohort5\sprint_three\dotnet\200826\200826-partial-v
 C:\Users\student\Code_School\cohort5\sprint_three\dotnet\200826\200826-partial-views-cw-autumn-ragland\Classwork\obj\Debug\netcoreapp3.1\Razor\Views\StreamingPlatforms\ViewPopular.cshtml.g.cs
 C:\Users\student\Code_School\cohort5\sprint_three\dotnet\200826\200826-partial-views-cw-autumn-ragland\Classwork\obj\Debug\netcoreapp3.1\Razor\Views\StreamingPlatforms\ViewUnpopular.cshtml.g.cs
 C:\Users\student\Code_School\cohort5\sprint_three\dotnet\200826\200826-partial-views-cw-autumn-ragland\Classwork\obj\Debug\netcoreapp3.1\Razor\Views\StreamingPlatforms\_PlatformDetails.cshtml.g.cs
+C:\Users\student\Code_School\cohort5\sprint_three\dotnet\200826\200826-partial-views-cw-autumn-ragland\Classwork\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NotFound.cshtml.g.cs

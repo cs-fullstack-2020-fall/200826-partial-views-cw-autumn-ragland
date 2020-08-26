@@ -1,1 +1,18 @@
-<h1>Welcome to the Streaming Platfrom Landing Page</h1>
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to the platforms Listing Landing Page</h1>
+  <p class="lead">Create a Streaming Platform that allows users to view all streaming platfroms, view the details of one platfrom, view platfroms with 3 or more shows/movies and view platfroms with less than 3 shows/movies</p>
+  <hr class="my-4">
+  <p class="lead">
+    <button type="button" class="btn btn-primary">
+        <a class="text-light" asp-area="" asp-controller="StreamingPlatforms" asp-action="ViewAll">View All Platforms</a>
+    </button>
+
+    <button type="button" class="btn btn-primary">
+        <a class="text-light" asp-area="" asp-controller="StreamingPlatforms" asp-action="ViewPopular">View Popular Platforms</a>
+    </button>
+
+    <button type="button" class="btn btn-primary">
+        <a class="text-light" asp-area="" asp-controller="StreamingPlatforms" asp-action="ViewUnpopular">View Unpopular Platforms</a>
+    </button>
+  </p>
+</div>

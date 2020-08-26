@@ -2,7 +2,7 @@
 <h1>View Popular Platforms</h1>
 @foreach (Platform platform in @Model.platformList)
 {
-    @if(@platform.availableMedia >= 3)
+    @if(@platform.availableMedia.Count >= 3)
     {
        <partial name = "_PlatformDetails" model = "platform"/> 
     }

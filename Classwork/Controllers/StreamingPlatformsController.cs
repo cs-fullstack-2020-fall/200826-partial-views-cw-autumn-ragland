@@ -20,8 +20,15 @@ namespace Classwork.Controllers
         public IActionResult ViewOne(string platformName)
         {
             Platform matchingPlatform = platformList.platformList.FirstOrDefault(platform => platform.name == platformName);
-
-            return View(matchingPlatform);
+            if(matchingPlatform != null)
+            {
+              
+            return View(matchingPlatform);  
+            }
+            else 
+            {
+                return View("NotFound");
+            }
         }
         public IActionResult ViewPopular()
         {
