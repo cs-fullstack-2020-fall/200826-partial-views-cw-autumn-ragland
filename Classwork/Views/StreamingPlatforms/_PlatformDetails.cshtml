@@ -1,0 +1,6 @@
+<h2>Platform Name : @Model.name</h2>
+@foreach (Media media in @Model.availableMedia)
+{
+    <h3>Media Title : @media.title</h3>
+    <h3>Media Description : @media.description</h3>
+}

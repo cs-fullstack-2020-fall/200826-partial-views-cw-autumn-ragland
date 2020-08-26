@@ -1,0 +1,6 @@
+@model Classwork.ViewModels.PlatformAndMedia
+<h1>View All Platforms</h1>
+@foreach (Platform platform in @Model.platformList)
+{
+    <partial name = "_PlatformDetails" model = "platform"/>
+}
