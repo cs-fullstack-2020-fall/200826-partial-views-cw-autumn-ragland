@@ -1,8 +1,21 @@
+@* Partial View *@
+
+@* Display the properties from the model passed in from the view rendering this partial *@
+
 <div class="card" style="width: 18rem;">
+
   <div class="card-body">
+
+    @* Display the name property of the Platform object passed explicitly or by default *@
+
     <h5 class="card-title">Platform Name : @Model.name</h5>
+
+    @* For each Media object in the Platform object's avalible media list *@
+
     @foreach (Media media in @Model.availableMedia)
     {
+      @* display the titile and description propety values of that Media object *@
+      
         <h6 class="card-subtitle mb-2 text-muted">Media Title : @media.title</h6>
         <p class="card-text">Media Description : @media.description</p>
     }

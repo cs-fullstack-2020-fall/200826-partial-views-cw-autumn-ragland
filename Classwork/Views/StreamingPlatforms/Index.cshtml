@@ -3,14 +3,15 @@
   <p class="lead">Create a Streaming Platform that allows users to view all streaming platfroms, view the details of one platfrom, view platfroms with 3 or more shows/movies and view platfroms with less than 3 shows/movies</p>
   <hr class="my-4">
   <p class="lead">
+    @* Link to call StreamPlatform controller method ViewAll *@
     <button type="button" class="btn btn-primary">
         <a class="text-light" asp-area="" asp-controller="StreamingPlatforms" asp-action="ViewAll">View All Platforms</a>
     </button>
-
+    @* Link to call StreamPlatform controller method ViewPopular *@
     <button type="button" class="btn btn-primary">
         <a class="text-light" asp-area="" asp-controller="StreamingPlatforms" asp-action="ViewPopular">View Popular Platforms</a>
     </button>
-
+    @* Link to call StreamPlatform controller method ViewUnpopular *@
     <button type="button" class="btn btn-primary">
         <a class="text-light" asp-area="" asp-controller="StreamingPlatforms" asp-action="ViewUnpopular">View Unpopular Platforms</a>
     </button>

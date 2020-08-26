@@ -1,9 +1,18 @@
+@* reference model passed into view from controller method *@
 @model Classwork.ViewModels.PlatformAndMedia
-<h1>View Popular Platforms</h1>
+
+@* Page Header *@
+<h1>View Unopular Platforms</h1>
+
+@* Page Contents *@
+
+@* Iterate through PlatformAndMedia object passed to View *@
 @foreach (Platform platform in @Model.platformList)
 {
+    @* If the number of Media objects in the Platform objects avalible media list is greater than or equal to 3 ... *@
     @if(@platform.availableMedia.Count < 3)
     {
+        @* For each platform in the object's platform list that meets the condition - display the partial and pass the platform object *@
        <partial name = "_PlatformDetails" model = "platform"/> 
     }
 }

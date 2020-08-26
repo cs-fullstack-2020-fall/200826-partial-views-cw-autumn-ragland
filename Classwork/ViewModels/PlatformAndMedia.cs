@@ -2,9 +2,12 @@ using System.Collections.Generic;
 using Classwork.Models;
 namespace Classwork.ViewModels
 {
+    // provided model
     public class PlatformAndMedia
     {
+        // platformList property : list of platfrom objects
         public List<Platform> platformList = new List<Platform>();
+        // constructor populate list of platforms
         public PlatformAndMedia()
         {
             platformList.Add(

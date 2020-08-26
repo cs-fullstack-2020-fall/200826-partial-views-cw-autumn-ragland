@@ -1,6 +1,13 @@
+@* reference model passed into view from controller method *@
 @model Classwork.ViewModels.PlatformAndMedia
+
+@* Page Header *@
 <h1>View All Platforms</h1>
+
+@* Page Contents *@
+@* Iterate through PlatformAndMedia object passed to View *@
 @foreach (Platform platform in @Model.platformList)
 {
+    @* For each platform in the object's platform list - display the partial and pass the platform object *@
     <partial name = "_PlatformDetails" model = "platform"/>
 }

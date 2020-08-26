@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 namespace Classwork.Models
 {
+    // provided model
     public class Platform
     {
         public string name;
