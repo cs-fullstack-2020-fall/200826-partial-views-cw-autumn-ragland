@@ -10,10 +10,61 @@
 Create a Streaming Platform that allows users to view all streaming platfroms, view the details of one platfrom, view platfroms with 3 or more shows/movies and view platfroms with less than 3 shows/movies
 
 ### Assigment
-#### Models
-- Platfrom Model : name, list of available media
-- Available Media Model : title, description
-- Platforms and Available Media View Model : list of platforms populated in constructor with 3 platfroms
+#### Provided Models
+Platform
+```
+public class Platform
+{
+    public string name;
+    public List<Media> availableMedia = new List<Media>();
+    public Platform(string name, List<Media> availableMedia)
+    {
+        this.name = name;
+        this.availableMedia = availableMedia;
+    }
+}
+```
+Media
+```
+public class Media
+{
+    public string title;
+    public string description;
+    public Media(string title, string description)
+    {
+        this.title = title;
+        this.description = description;
+    }
+}
+```
+Platform and Media View Model
+```
+public class PlatformAndMedia
+{
+    public List<Platform> platformList = new List<Platform>();
+    public PlatformAndMedia()
+    {
+        platformList.Add(
+            new Platform("Netflix", new List<Media>(){
+                new Media("Media One", "This is Media One"),
+                new Media("Media Two", "This is Media Two"),
+                })
+            );
+        platformList.Add(
+            new Platform("Hulu", new List<Media>(){
+                new Media("Media One", "This is Media One"),
+                })
+            );
+        platformList.Add(
+        new Platform("Disney +", new List<Media>(){
+            new Media("Media One", "This is Media One"),
+            new Media("Media Two", "This is Media Two"),
+            new Media("Media Three", "This is Media Three"),
+            })
+        );
+    }
+}
+```
 
 #### PLatfrom Landing Page
 - Action : Return associated view
