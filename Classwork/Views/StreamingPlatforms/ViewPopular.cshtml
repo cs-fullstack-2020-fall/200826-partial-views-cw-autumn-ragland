@@ -1,0 +1,9 @@
+@model Classwork.ViewModels.PlatformAndMedia
+<h1>View Popular Platforms</h1>
+@foreach (Platform platform in @Model.platformList)
+{
+    @if(@platform.availableMedia >= 3)
+    {
+       <partial name = "_PlatformDetails" model = "platform"/> 
+    }
+}

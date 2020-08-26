@@ -1,6 +1,11 @@
-<h2>Platform Name : @Model.name</h2>
-@foreach (Media media in @Model.availableMedia)
-{
-    <h3>Media Title : @media.title</h3>
-    <h3>Media Description : @media.description</h3>
-}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Platform Name : @Model.name</h5>
+    @foreach (Media media in @Model.availableMedia)
+    {
+        <h6 class="card-subtitle mb-2 text-muted">Media Title : @media.title</h6>
+        <p class="card-text">Media Description : @media.description</p>
+    }
+  </div>
+</div>
+<br>
